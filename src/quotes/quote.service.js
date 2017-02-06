@@ -54,7 +54,7 @@ var httpServer = http.createServer(app);
 
 const options = {
     key: fs.readFileSync('/binaries/build/certs/fairtrade.key'),
-    cert: fs.readFileSync('/binaries/build/certs/d96c2c88c5c14294.crt')
+    cert: fs.readFileSync('/binaries/build/certs/fairtrade.crt')
 };
 
 https.createServer(options, (req, res) => {
