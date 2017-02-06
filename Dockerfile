@@ -6,7 +6,8 @@ MAINTAINER sysadmin@fairtradex.com
 RUN \
   apt-get update && \
   apt-get -y upgrade && \
-  apt-get install -y nodejs npm
+  apt-get install -y nodejs npm && \
+  apt-get install -y nodejs-legacy
 
 # Copy app to /src
 ADD . /binaries
