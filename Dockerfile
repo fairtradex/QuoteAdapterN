@@ -9,12 +9,12 @@ RUN \
   apt-get install -y nodejs npm
 
 # Copy app to /src
-ADD . /src
-COPY . /src
+ADD . /binaries
+COPY . /binaries
 
 # Install app and dependencies into /src
-RUN cd /src 
-RUN npm install
+RUN cd /binaries 
+RUN npm start
 EXPOSE 3001
-WORKDIR /src
-CMD ["npm", "start"]
+WORKDIR /binaries
+#CMD ["npm", "start"]
