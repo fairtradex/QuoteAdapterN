@@ -16,6 +16,6 @@ COPY . /binaries
 # Install app and dependencies into /src
 RUN cd /binaries 
 #RUN npm start
-EXPOSE 3001
+EXPOSE 3001,3012
 WORKDIR /binaries
 CMD ["npm", "start"]
