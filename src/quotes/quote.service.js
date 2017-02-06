@@ -25,8 +25,8 @@ const fs = require('fs');
 const http = require('http');
 const https = require('https');
 
-var privateKey  = fs.readFileSync('../certs/fairtrade.key', 'utf8');
-var certificate = fs.readFileSync('../certs/d96c2c88c5c14294.crt', 'utf8');
+var privateKey  = fs.readFileSync('../../src/certs/fairtrade.key', 'utf8');
+var certificate = fs.readFileSync('../../src/certs/d96c2c88c5c14294.crt', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 
 const port = process.env.PORT || config.get("port");        // set our port
