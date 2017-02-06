@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 MAINTAINER sysadmin@fairtradex.com
 
-# Enable EPEL for Node.js
+# Enable EPEL for Node.js  
 RUN \
   apt-get update && \
   apt-get -y upgrade && \
