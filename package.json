@@ -1,0 +1,80 @@
+{
+  "name": "QouteAdapterN",
+  "version": "0.0.1",
+  "description": "The quotes adapter",
+  "keywords": [
+      "seed project"
+  ],
+  "main": "",
+  "scripts": {
+      "prestart": "npm install",
+      "build:js": "babel src -d build --copy-files --presets es2015 --ignore /**/*.spec.js",
+      "build": "npm run prestart &&npm run build:js",
+      "start": "npm run build &&node ./build/quotes/quote.service.js"
+  },
+  "repository": {
+      "type": "git",
+      "url": ""
+  },
+  "author": "peers team",
+  "license": "NA",
+  "dependencies": {
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "nconf": "^0.8.4",
+    "node-logger": "0.0.1",
+    "redis": "^2.6.3",
+    "request": "^2.76.0",
+    "signalr-client": "0.0.16",
+    "signalrjs": "^0.2.2",
+    "socket.io": "^1.4.8",
+    "socket.io-redis": "^2.0.0",
+
+    "async": "^2.1.4",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "color": "^1.0.2",
+    "request-promise": "^4.1.1",
+    "serve-favicon": "^2.3.0",
+
+    "express-jwt": "^3.4.0",
+    "express-jwt-auth": "^0.0.6",
+    "graceful-fs": "^4.1.11",
+    "http-errors": "^1.5.0",
+    "jsonwebtoken": "^7.1.3",
+    "jwt-simple": "^0.5.0",
+    "lodash": "^4.13.1",
+    "path": "^0.12.7",
+
+
+    "babel": "^6.5.2",
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-es6-polyfill": "^1.1.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-es2015-classes": "^6.14.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-register": "^6.18.0",
+    "babel-runtime": "^6.9.2",
+
+    "compression": "^1.6.2",
+    "deep-merge": "^1.0.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+
+    "gulp-sourcemaps": "^2.1.1",
+    "jshint": "^2.9.3",
+    "nodemon": "^1.11.0",
+    "webpack": "^1.13.2",
+
+    "winston": "^2.2.0",
+    "winston-daily-rotate-file": "^1.4.4"
+  }
+
+}

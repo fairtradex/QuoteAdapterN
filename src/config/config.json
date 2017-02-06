@@ -1,0 +1,25 @@
+{
+  "port": 3012,
+  "ssl-port": 443,
+  "favicon": "favicon.ico",
+  "secret": "sec",
+  "development": {
+    "legacy": {
+      "authentication": {
+        "uri": "https://devwebservice.fairtrade.co.il/AuthService.asmx"
+      }
+    },
+    "redis": {
+      "host": "stgftdx.redis.cache.windows.net",
+      "port": 6380,
+      "password": "IiVeG+t4B+wvdQyiWzF1TW1YZRMCPaTH2V49KMmx4gY=",
+      "ssl": true,
+      "abortConnect": false,
+      "detect_buffers": true
+    },
+    "languages": {
+      "en": 0,
+      "he": 1
+    }
+  }
+}
