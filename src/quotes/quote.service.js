@@ -25,9 +25,9 @@ const fs = require('fs');
 const http = require('http');
 const https = require('https');
 
-var privateKey  = fs.readFileSync('/binaries/src/certs/fairtrade.key', 'utf8');
-var certificate = fs.readFileSync('/binaries/src/certs/d96c2c88c5c14294.crt', 'utf8');
-var credentials = {key: privateKey, cert: certificate};
+// var privateKey  = fs.readFileSync('../certs/fairtrade.key', 'utf8');
+// var certificate = fs.readFileSync('../certs/d96c2c88c5c14294.crt', 'utf8');
+//var credentials = {key: privateKey, cert: certificate};
 
 const port = process.env.PORT || config.get("port");        // set our port
 const sslPort = config.get("ssl-port");        // set our ssl port
@@ -51,7 +51,18 @@ const redisOptions =   config.get(mode.concat(":", "redis"));
 // const http = require('http').Server(app);
 
 var httpServer = http.createServer(app);
-var httpsServer = https.createServer(credentials, app);
+
+const options = {
+    key: fs.readFileSync('/binaries/build/certs/fairtrade.key'),
+    cert: fs.readFileSync('/binaries/build/certs/d96c2c88c5c14294.crt')
+};
+
+https.createServer(options, (req, res) => {
+    res.writeHead(200);
+    res.end('hello world\n');
+}).listen(sslPort);
+
+//var httpsServer = https.createServer(credentials, app);
 
 const io = require('socket.io')(3050);
 
