@@ -8,7 +8,7 @@ const fs = require('fs');
 const sourcemaps = require("gulp-sourcemaps");
 
 const nodemon = require('nodemon');
-//const mocha = require('gulp-mocha');
+const mocha = require('gulp-mocha');
 
 const babel = require('babel-core/register');
 
@@ -30,7 +30,7 @@ if(process.env.NODE_ENV !== 'production') {
 
 
 // tasks
-/*
+
 gulp.task('mocha', function() {
     return gulp.src(['./src/!**!/!*.spec.js'])
         .pipe(mocha({
@@ -41,4 +41,4 @@ gulp.task('mocha', function() {
 });
 
 gulp.task('tests', ['mocha']);
-*/
+

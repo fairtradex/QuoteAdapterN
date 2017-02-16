@@ -31,14 +31,12 @@
     "signalrjs": "^0.2.2",
     "socket.io": "^1.4.8",
     "socket.io-redis": "^2.0.0",
-
     "async": "^2.1.4",
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.2",
     "color": "^1.0.2",
     "request-promise": "^4.1.1",
     "serve-favicon": "^2.3.0",
-
     "express-jwt": "^3.4.0",
     "express-jwt-auth": "^0.0.6",
     "graceful-fs": "^4.1.11",
@@ -47,9 +45,7 @@
     "jwt-simple": "^0.5.0",
     "lodash": "^4.13.1",
     "path": "^0.12.7",
-
-
-   
+    "babel": "^6.5.2",
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
     "babel-es6-polyfill": "^1.1.0",
@@ -61,20 +57,20 @@
     "babel-preset-stage-3": "^6.17.0",
     "babel-register": "^6.18.0",
     "babel-runtime": "^6.9.2",
-
     "compression": "^1.6.2",
     "deep-merge": "^1.0.0",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-
+    "gulp-mocha": "^3.0.1",
     "gulp-sourcemaps": "^2.1.1",
+    "istanbul": "^0.4.5",
     "jshint": "^2.9.3",
+    "mocha": "^3.1.2",
+    "mocha-mongoose": "^1.2.0",
     "nodemon": "^1.11.0",
     "webpack": "^1.13.2",
-
     "winston": "^2.2.0",
     "winston-daily-rotate-file": "^1.4.4"
   }
-
 }
