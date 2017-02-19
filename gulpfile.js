@@ -41,4 +41,4 @@ gulp.task('mocha', function() {
 });
 
 gulp.task('tests', ['mocha']);
-
+gulp.task('default', ['build']);

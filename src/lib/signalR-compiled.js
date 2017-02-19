@@ -50,7 +50,7 @@ var states = {
         retryingFailed: 10
     },
     getConnection: function getConnection(code) {
-        for (value in states.connection) {
+        for (var value in states.connection) {
             if (states.connection[value] == code) return value;
         };
         return undefined;
@@ -377,7 +377,7 @@ function clientInterface(baseUrl, hubs, reconnectTimeout, doNotStart) {
     client.__defineGetter__('hubs', function () {
         var ret = [],
             x = 0;
-        for (h in _client.hubs) {
+        for (var h in _client.hubs) {
             ret[x++] = h;
         }
         return ret;
